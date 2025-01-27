@@ -8,7 +8,20 @@
     margin-top: 0;
     padding-top: 5rem;
   }
+.projet-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 
+  i {
+    font-size: 3rem;
+    color: #de6633; 
+  }
+}
+
+.tag-icons {
+  margin-top: 20px;
+}
   .project-wrapper {
     margin-bottom: 15rem;
 

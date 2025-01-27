@@ -1,0 +1,56 @@
+// Menu container
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 2rem;
+	background-color: $white-color;
+
+  // Links within the menu
+	&__link {
+    text-decoration: none;
+    color: $light-color; // Couleur claire
+    margin: 0 1rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color; // Couleur secondaire
+    }
+
+    &--active {
+      color: $accent-color; // Accent color pour les liens actifs
+    }
+}
+
+  // Dropdown menu (si tu as un menu déroulant)
+	&__dropdown {
+    position: relative;
+
+    &-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    z-index: 10;
+
+    a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: $light-color;
+
+        &:hover {
+        background-color: $hover-bg-color;
+        }
+    }
+    }
+
+    &:hover &-content {
+    display: block;
+    }
+	}
+}

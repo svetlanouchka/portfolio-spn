@@ -1,13 +1,15 @@
+@import "./sass/abstracts/variables";
 @import "./sass/vendors/bootstrap.scss";
 
 @import "./sass/abstracts/mixins";
-@import "./sass/abstracts/variables";
+
 @import "./sass/abstracts/helpers";
 
 @import "./sass/base/base";
 @import "./sass/base/typography";
 
 @import "./sass/components/buttons";
+@import "./sass/components/menu";
 
 @import "./sass/layout/footer";
 @import "./sass/layout/sections";

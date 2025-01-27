@@ -15,6 +15,32 @@ export const targetElements = [
       origin: "bottom",
     },
   },
+
+  {
+    element: ".menu",
+    animation: {
+      delay: 300,
+      distance: "0px",
+      origin: "bottom",
+    },
+  },
+  {
+    element: ".hero-image",
+    animation: {
+      delay: 300,
+      distance: "0px",
+      origin: "bottom",
+    },
+  },
+
+  {
+    element: ".hero-icons",
+    animation: {
+      delay: 300,
+      distance: "0px",
+      origin: "bottom",
+    },
+  },
   {
     element: ".hero-title",
     animation: {
