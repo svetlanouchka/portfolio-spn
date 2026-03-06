@@ -22,7 +22,7 @@
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[javascript], [dév web], front-end, full-stack, php, react" />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="Svetlana Preux-Nigay | Développeuse Web" />
+    <meta name="description" content="Frontend Developer React / Next.js basée en France. Expérience SaaS, UX et développement de plateformes web performantes." />
 
     <link
       rel="stylesheet"
@@ -52,28 +52,44 @@
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
-      <div class="container hero-container">
-        <div class="hero-content">
-        <h1 class="hero-title load-hidden">
-          Hello, je suis <span class="text-color-main">Svetlana Preux-Nigay</span>
-          <br />
-          Développeuse Front-end & Full-Stack
-        </h1>
+<div class="container hero-container">
+    <div class="hero-content ">
+      <h1 class="hero-title load-hidden  display-3 display-md-2 fw-bold mb-3">
+        Hello, je suis <span class="text-color-main">Svetlana Preux-Nigay</span>
+      </h1>
+
+      <p class="hero-subtitle load-hidden  lead fw-medium text-secondary mb-4 mb-md-5">
+        Développeuse Frontend orientée Produit
+      </p>
+
+      <p class="hero-stack load-hidden  fst-italic mb-4">
+        React · Next.js · TypeScript  
+        <span class="mx-2">•</span>  
+        Expérience SaaS & vision business 360°
+      </p>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >En savoir plus</a
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects"
+            >Découvrir mon travail</a
           >
           <div class="hero-icons">
   <i class="fa-brands fa-html5" title="HTML5"></i>
   <i class="fa-brands fa-css3" title="CSS3"></i>
-  <i class="fa-brands fa-js fa-beat" title="JavaScript"></i>
+  <i class="fa-brands fa-js" title="JavaScript"></i>
   <i class="fa-brands fa-php" title="PHP"></i>
   <i class="fa-brands fa-react fa-spin" title="React"></i>
   <i class="fa-solid fa-database" title="MySQL"></i>
 </div>
         </p>
         </div>
-        <div class="hero-image">
+        <div data-tilt
+     data-tilt-max="15"
+     data-tilt-perspective="600"
+     data-tilt-scale="1.12"
+     data-tilt-speed="400"
+     data-tilt-glare="true"
+     data-tilt-max-glare="0.7"
+     data-tilt-transition="true"
+                    class="thumbnail rounded js-tilt hero-image" >
       <img
         src="assets/my-notion-face-portrait.png"
         alt="Illustration de développement"
@@ -105,16 +121,23 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text" style="font-size: 1.6rem; line-height: 1.6;">
-J'adore imaginer et développer des interfaces intuitives et des solutions qui allient esthétique et efficacité. <br>Grâce au code, j'ai développé <b>patience, persévérance et organisation</b>, tandis que mon <b>côté créatif et mon œil pour le design</b> m'apportent des approches originales et innovantes.<br>
-              <p class="about-wrapper__info-text" style="font-size: 1.6rem; line-height: 1.6;">
-Mes années d'expérience dans le marketing digital et la communication font de moi une <b>professionnelle capable de respecter ses engagements</b>, de tenir les délais et de travailler dans des conditions exigeantes.</p>
-<p class="about-wrapper__info-text" style="font-size: 1.6rem; line-height: 1.6;">
-Mon ambition est de contribuer à des <b>projets ayant un impact positif</b>, en mettant mes compétences au service d'initiatives qui ont du sens. Je m'engage à <b>transformer des idées en réalisations concrètes et percutantes.</b></p>
-              </p>
-              <p class="about-wrapper__info-text" style="font-size: 1.6rem;">
-                Et si on créait quelque chose d'incroyable ensemble ?
-              </p>
+              <p class="about-wrapper__info-text">
+Développeuse frontend orientée produit, je conçois et développe des interfaces web performantes qui transforment des idées en solutions digitales concrètes.
+</p>
+<p class="about-wrapper__info-text">
+<b>Titulaire du Titre Professionnel Concepteur Développeur d’Applications (RNCP niveau 6).</b>
+</p>
+<p class="about-wrapper__info-text">
+Après 12 ans en marketing digital et communication, j’ai choisi de me spécialiser en développement web afin de réunir vision business et expertise technique. Cette double compétence me permet de créer des interfaces non seulement esthétiques, mais surtout efficaces en termes d’usage, de performance et de conversion.
+</p>
+
+<p class="about-wrapper__info-text">
+Lors de mon expérience dans une startup SaaS spécialisée en data immobilière, j’ai collaboré directement avec le fondateur et le CTO sur le développement produit, la création d’un design system et l’implémentation d’outils internes.
+</p>
+
+<p class="about-wrapper__info-text">
+Aujourd’hui, je souhaite contribuer à des projets digitaux ambitieux où UX, performance et impact business sont au cœur des décisions.
+</p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
@@ -142,45 +165,86 @@ Mon ambition est de contribuer à des <b>projets ayant un impact positif</b>, en
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title p-2">Soigne Moi App</h3>
-                <div>
-                  <p class="mb-4 p-2">
-                    Développement d’un écosystème complet pour un hôpital fictif comprenant une application web, mobile et desktop. J’ai conçu l’interface, réalisé le MCD, développé les fonctionnalités principales (gestion des séjours, avis médicaux, plannings) en PHP avec une architecture MVC, et intégré des API sécurisées pour une communication en temps réel.<br><b>Tech:</b><br> <b>Web</b> : HTML5, CSS3, Bootstrap, PHP, MySQL.<br><b>Mobile</b> : Flutter, Dart.<br><b>Desktop</b> : Python (Tkinter).
-                  </p>
-                    </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://soignemoi-spn-snowy-butterfly-3637.fly.dev/"
-                >
-                  Voir en ligne
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/svetlanouchka/soignemoi_spn"
-                >
-                  Voir le code source
-                </a>
-                <div class="tag-icons"><h2><span class="badge rounded-pill text-bg-primary">Design</span>
+                <h3 class="project-wrapper__text-title p-2">Lycaon – SaaS Data Immobilier</h3>
+                <div class="mb-5 p-4 bg-dark-subtle rounded-4 border border-secondary-subtle shadow-sm">
+  <h3 class="mb-4 text-primary fw-bold">
+    Développement d’une plateforme SaaS B2B (pré-lancement)
+  </h3>
+
+  <div class="row g-4">
+    <!-- Contexte -->
+    <div class="col-md-6">
+      <h4 class="mb-3 fw-semibold text-blue">Contexte</h4>
+      <p class="text-secondary mb-0">
+        Startup spécialisée en data immobilière.<br>
+        Développement d’un outil d’analyse et de visualisation de données à destination des professionnels de l’immobilier.
+      </p>
+    </div>
+
+    <!-- Rôle -->
+    <div class="col-md-6">
+      <h4 class="mb-3 fw-semibold text-blue">Rôle</h4>
+      <p class="text-secondary mb-0">
+        <strong>Développeuse Frontend</strong><br>
+        Collaboration directe et quotidienne avec le fondateur et le CTO.<br>
+        Participation active aux décisions produit et UX.
+      </p>
+    </div>
+  </div>
+
+  <hr class="my-4 border-secondary opacity-25">
+
+  <h4 class="mb-4 fw-semibold text-blue">Responsabilités & Réalisations principales</h4>
+  <ul class="list-unstyled ps-0 text-secondary fs-4">
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Conception et développement des interfaces principales avec <strong>React · Next.js · TypeScript</strong></span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Proposition et implémentation de nouvelles fonctionnalités produit (priorisation et MVP)</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Prise d’initiative sur les choix <strong>UX</strong> pour simplifier la lecture et l’interprétation de données complexes</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Mise en place d’un <strong>design system</strong> cohérent et scalable (composants réutilisables, tokens)</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Intégration d’une <strong>cartographie dynamique interactive</strong> avec Leaflet + données géospatiales</span>
+    </li>
+    <li class="mb-3 d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Collaboration quotidienne avec le fondateur & CTO sur la roadmap, les arbitrages produit et les priorités</span>
+    </li>
+    <li class="d-flex align-items-start">
+      <span class="me-3 text-primary fs-4">•</span>
+      <span>Participation active à la phase de <strong>pré-lancement</strong> du SaaS</span>
+    </li>
+  </ul>
+  <p>Produit non public (pré-lancement).<br>
+Captures d’écran issues de l’environnement de développement</p>
+</div>
+
+
+                <div class="tag-icons"><h2><span class="badge rounded-pill text-bg-primary">UX</span>
                   <span class="badge rounded-pill text-bg-primary">Dev</span>
-                  <span class="badge rounded-pill text-bg-primary">Déploiement</span></h2>
+                  </h2>
                   </div>
                   <div class="projet-icons">
-  <i class="fa-brands fa-html5" title="HTML5"></i>
-  <i class="fa-brands fa-css3" title="CSS3"></i>
   <i class="fa-brands fa-js " title="JavaScript"></i>
-  <i class="fa-brands fa-php" title="PHP"></i>
-  <i class="fa-solid fa-database" title="MySQL"></i>
-  <i class="fa-brands fa-docker" title="Docker"></i>
+  <i class="fa-brands fa-react" title="React"></i>
 </div>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://soignemoi-spn-snowy-butterfly-3637.fly.dev/" target="_blank">
+            <!-- Bloc image + thumbnails + modal -->
+
+   <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden mb-3 pb-3">
+                <a rel="noreferrer"  target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -191,16 +255,111 @@ Mon ambition est de contribuer à des <b>projets ayant un impact positif</b>, en
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/projetspn.png"
+                      src="assets/projetlycaon.png"
+                    />
+                  </div>
+                </a>
+              </div>
+
+
+  <!-- Thumbnails en dessous -->
+  <div class="d-flex flex-wrap justify-content-center gap-3 pt-3 thumbnail-gallery load-hidden">
+    <!-- Thumbnail 1 -->
+    
+      <img src="assets/district_big.png" 
+           alt="Capture 1" 
+           class="img-thumbnail rounded shadow-sm thumbnail-img">
+    </a>
+
+    <!-- Thumbnail 2 -->
+
+      <img src="assets/radar_big.png" 
+           alt="Capture 2" 
+           class="img-thumbnail rounded shadow-sm thumbnail-img">
+    </a>
+
+    <!-- Thumbnail 3 -->
+
+      <img src="assets/insights_big.png" 
+           alt="Capture 3" 
+           class="img-thumbnail rounded shadow-sm thumbnail-img">
+    </a>
+
+    <!-- Ajoute autant que tu veux... -->
+  </div>
+              </div>
+
+
+
+           
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title p-2">Jeu De Mindset Coaching – Site vitrine</h3>
+                <div>
+                  <p class="mb-4 p-2">
+                    Objectif : transformer les visiteurs en prospects via une expérience engageante.
+                    Création d’un site vitrine moderne pour une coach professionnelle afin de présenter ses services et faciliter la prise de contact avec ses clients.
+
+Le site a été développé from scratch avec Next.js, avec un focus sur l’expérience utilisateur, les animations et la conversion.
+
+J’ai conçu une navigation fluide avec animations GSAP, ainsi qu’un quiz interactif permettant aux visiteurs d’identifier leurs besoins avant de prendre rendez-vous.<b>Tech:</b>Next.js · React · TypeScript · GSAP
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://www.jeudemindset.fr/"
+                >
+                  Voir en ligne
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/svetlanouchka/myriam-coach"
+                >
+                  Voir le code source
+                </a>
+                  <div class="tag-icons"><h2><span class="badge rounded-pill text-bg-primary">Design</span>
+                  <span class="badge rounded-pill text-bg-primary">Dev</span>
+
+                  <span class="badge rounded-pill text-bg-primary">Déploiement</span></h2>
+                                    </div>
+                  <div class="projet-icons">
+  <i class="fa-brands fa-react" title="react"></i>
+  <i class="fa-brands fa-js " title="JavaScript"></i>
+  <i class="fa-brands fa-node-js " title="NodeJS"></i>
+</div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://www.jeudemindset.fr/" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/myriam.png"
                     />
                   </div>
                 </a>
               </div>
             </div>
-          </div>
-          <!-- /END Project -->
+            </div>
 
-          <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
@@ -315,6 +474,69 @@ Développement full-stack d’une application web dédiée au bien-être, permet
       </div>
     </section>
     <!-- /END Projects Section -->
+     <div class="mb-5 p-4 bg-dark-subtle rounded-4 border border-secondary-subtle shadow-sm">
+  <h2 class="section-title dark-blue-text">
+    Formation
+  </h2>
+
+  <!-- Bloc 1 : Titre Professionnel -->
+  <div class="mb-5">
+    <h3 class="mb-3 fw-semibold">
+      Titre Professionnel Concepteur Développeur d’Applications
+    </h3>
+    <p class="mb-3">
+      <strong>RNCP Niveau 6. </strong>Certification reconnue par l’État
+    </p>
+    <ul class="list-unstyled ps-0 text-secondary fs-5 mx-auto" style="max-width: 700px;">
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Développement d’applications sécurisées (front & back)</span>
+      </li>
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Conception d’architecture logicielle, bases de données et API</span>
+      </li>
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Maquettage UX/UI et développement d’interfaces utilisateur</span>
+      </li>
+      <li class="d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Préparation à la certification RNCP37873 (titre professionnel délivré par le Ministère du Travail)</span>
+      </li>
+    </ul>
+  </div>
+
+  <hr class="my-4 border-secondary opacity-25">
+
+  <!-- Bloc 2 : Formation Développement Web – React -->
+  <div>
+    <h3 class="mb-3 fw-semibold">
+      Formation Développement Web – React
+    </h3>
+    <p class=" mb-3">
+      Wild Code School –  Formation intensive 
+    </p>
+    <ul class="list-unstyled ps-0 text-secondary fs-5 mx-auto" style="max-width: 700px;">
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>HTML, CSS, JavaScript avancé + frameworks modernes</span>
+      </li>
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Spécialisation React : composants, state management, hooks, routing</span>
+      </li>
+      <li class="mb-3 d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Projets concrets full-stack (Node.js/Express ou Next.js)</span>
+      </li>
+      <li class="d-flex align-items-start justify-content-center">
+        <span class="me-3 text-primary fs-4">•</span>
+        <span>Préparation au métier de Développeur Frontend / Full-Stack</span>
+      </li>
+    </ul>
+  </div>
+</div>
 <section id="skills-tools" class="py-5">
   <div class="container">
     <h2 class="section-title dark-blue-text">Skills & Tools</h2>

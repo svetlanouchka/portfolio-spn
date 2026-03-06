@@ -89,3 +89,23 @@
     }
   }
 }
+
+.thumbnail-gallery {
+  .thumbnail-img {
+    width: 250px;               // taille fixe des miniatures
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+}
+
+.main-project-img {
+  border: 2px solid rgba(var(--bs-primary-rgb), 0.3);
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: var(--bs-primary);
+  }
+}
+

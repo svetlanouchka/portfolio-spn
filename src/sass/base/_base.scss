@@ -1,9 +1,7 @@
 html {
   font-size: 62.5%;
 
-  &.sr .load-hidden {
-    visibility: hidden;
-  }
+  
 }
 
 body {
@@ -26,3 +24,30 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: $primary-color;
 }
+.load-hidden {
+  opacity: 0;
+  // transform: translateY(25px);           
+  visibility: hidden;                    
+  transition: 
+    opacity 0.9s ease-out,
+    transform 0.9s ease-out,
+    visibility 0.9s ease-out;
+}
+
+// Quand on enlève le masquage
+body.loaded .load-hidden {
+  opacity: 1;
+  // transform: translateY(0);
+  visibility: visible;
+}
+
+// Option : délai commun léger pour que ça ne soit pas trop brutal
+.load-hidden {
+  transition-delay: 0.4s;                // ajuste : 0.3s → 0.8s selon tes goûts
+}
+
+// Si tu veux un minuscule stagger (très subtil, recommandé)
+.hero-title.load-hidden   { transition-delay: 0.35s; }
+.hero-subtitle.load-hidden{ transition-delay: 0.50s; }
+.hero-stack.load-hidden   { transition-delay: 0.65s; }
+.hero-cta.load-hidden     { transition-delay: 0.80s; }
